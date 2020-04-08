@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title></title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <style>
 	.warning { color: #FF0000; }
 </style>
@@ -101,7 +102,7 @@
 							<div class="form-group row">
 								<label for="email" class="col-sm-2 col-form-label">Website</label>
 								<div class="col-sm-10">
-									<input type="text" name="web" class="form-control <?php echo ($error_web !="" ? "is-invalid" : ""); ?>" id="web" placeholder="web" value="<?php echo $web; ?>"><span class="warning"><?php echo $error_web; ?></span>
+									<input type="text" name="web" class="form-control <?php echo ($error_web !="" ? "is-invalid" : ""); ?>" id="web" placeholder="web" value="<?php echo $web ; ?>"><span class="warning"><?php echo $error_web; ?></span>
 								</div>
 							</div>							
 							<div class="form-group row">
@@ -133,7 +134,7 @@
 	echo "<br>";
 	echo "Email = ".$email;
 	echo "<br>";
-	echo "Website = ";
+	echo "Website = ".$web;
 	echo "<br>";
 	echo "Telp = ".$telp;
 	echo "<br>";
