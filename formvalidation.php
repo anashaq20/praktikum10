@@ -28,13 +28,13 @@
 		}
 		else {
 			$nama = cek_input($_POST["nama"]);
-			if (!preg_match("/^[a-zA-Z ]*$/", $nama)) 
+			if (!preg_match("/^[a-zA-Z ]*$/",$nama)) 
 			{
-				$nameErr = "Inputan hanya boleh huruf dan spasi";
+				$error_nama = "Inputan hanya boleh huruf dan spasi";
 			}
 		}
 		if (empty($_POST["email"])) {
-			$error_nama = "Email tidak boleh kosong";
+			$error_email = "Email tidak boleh kosong";
 		}
 		else
 		{
